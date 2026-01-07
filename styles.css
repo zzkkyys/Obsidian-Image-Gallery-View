@@ -2,7 +2,10 @@
 /* custom colors and icons for dark theme                                    */
 /* ========================================================================= */
 
-body.theme-dark .lg-backdrop,
+body.theme-dark .lg-backdrop {
+  background-color: rgba(0, 0, 0, 0.45) !important;
+}
+
 body.theme-dark .lg-outer .lg-thumb-outer,
 body.theme-dark .lg-next,
 body.theme-dark .lg-prev {
@@ -34,11 +37,25 @@ body.theme-dark .btn-glob-search {
 /* custom colors and icons for light theme                                   */
 /* ========================================================================= */
 
-body.theme-light .lg-backdrop,
+body.theme-light .lg-backdrop {
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
 body.theme-light .lg-outer .lg-thumb-outer,
 body.theme-light .lg-next,
 body.theme-light .lg-prev {
   background-color: rgba(255, 255, 255, 1);
+}
+
+/* ========================================================================= */
+/* Make the lightbox smaller than the full window                            */
+/* ========================================================================= */
+
+.lg-outer.igv-lightbox {
+  width: 90vw;
+  height: 90vh;
+  top: 5vh;
+  left: 5vw;
 }
 
 body.theme-light .lg-outer .lg-thumb-item.active,

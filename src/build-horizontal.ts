@@ -42,6 +42,8 @@ const buildHorizontal = (
     img.style.width = '100%'
     img.style.height = '100%'
     img.style.borderRadius = '0px'
+    img.loading = 'lazy'
+    img.decoding = 'async'
     img.src = file.uri
     
     if (settings.border) {

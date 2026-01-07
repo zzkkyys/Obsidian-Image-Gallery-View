@@ -36,6 +36,8 @@ const buildVertical = (
     const img = figure.createEl('img')
     img.style.borderRadius = `${settings.radius}px`
     img.style.width = '100%' // 确保图片填满容器宽度
+    img.loading = 'lazy'
+    img.decoding = 'async'
     img.src = file.uri
     
     if (settings.border) {
